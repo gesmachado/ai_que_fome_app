@@ -7,7 +7,17 @@ import Col from 'react-bootstrap/Col';
 
 import React from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 function Login(){
+  const navigate = useNavigate();
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate("/home");
+
+  }
 
   return (
     <>
@@ -20,19 +30,19 @@ function Login(){
           </Col>
         </Row>
         <Row>
-          <Form>
+          <Form onSubmit={HandleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Endereço de e-mail:</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" required/>
               <Form.Text className="text-muted"></Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Senha:</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" required/>
             </Form.Group>
             
-            <Button variant="dark" type="submit" href='/home'>
+            <Button variant="dark" type="submit">
               Login
             </Button>
           </Form>

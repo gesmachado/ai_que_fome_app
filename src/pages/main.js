@@ -6,8 +6,8 @@ import Login from "./login";
 
 const Main = ({setIsLogged}) => (
   <Routes>
-    <Route exact path="/home" element={<Home setIsLogged={setIsLogged} />}/>
-    <Route exact path="/login" element={<Login/>}/>
+    <Route exact path="/home" element={<Home/>}/>
+    <Route exact path="/login" element={<Login setIsLogged={setIsLogged} />}/>
     <Route exact path="/" element={<Navigate to="/login" />}/>
   </Routes>
 )

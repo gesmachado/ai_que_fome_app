@@ -9,14 +9,14 @@ import React from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-function Login(){
+function Login({setIsLogged}){
   const navigate = useNavigate();
 
   const HandleSubmit = (e) => {
     e.preventDefault();
 
+    setIsLogged(true);
     navigate("/home");
-
   }
 
   return (

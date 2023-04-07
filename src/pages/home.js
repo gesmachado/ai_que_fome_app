@@ -1,8 +1,6 @@
 
 
-function Home({setIsLogged}) {
-
-  setIsLogged(true);
+function Home() {
 
   return (
     <div>

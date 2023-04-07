@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./home";
-import About from "./about";
+import Login from "./login";
 
 
 const Main = () => (
   <Routes>
-    <Route exact path="/" element={<Home/>}/>
-    <Route exact path="/about" element={<About/>}/>
+    <Route exact path="/home" element={<Home/>}/>
+    <Route exact path="/login" element={<Login/>}/>
   </Routes>
 )
 

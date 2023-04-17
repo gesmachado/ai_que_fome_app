@@ -94,7 +94,7 @@ function Home() {
           </Col>
         </Row>
         <Form onSubmit={HandleSubmit}>
-        <header>
+          <header>
             <h2 style={{ textAlign: "center" }}>Salgados</h2>
           </header>
           {ListItem("Hambúrguer", "hamburguer")}

@@ -94,13 +94,13 @@ function Home() {
           </Col>
         </Row>
         <Form onSubmit={HandleSubmit}>
-          <header>
+        <header>
             <h2 style={{ textAlign: "center" }}>Salgados</h2>
           </header>
           {ListItem("Hambúrguer", "hamburguer")}
           {ListItem("Cachorro-quente", "cachorroQuente")}
           {ListItem("Pizza", "pizza")}
-          <header>
+          <header style={{marginTop: '50px'}}>
             <h2 style={{ textAlign: "center" }}>Doces</h2>
           </header>
           {ListItem("Torta", "torta")}

@@ -49,6 +49,7 @@ function Home() {
               name={`${name}`}
               className="form-control input-number"
               defaultValue={quantidade}
+              disabled
               min="0"
               max="10"
               id={`input-${name}`}
